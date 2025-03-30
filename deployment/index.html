@@ -1,0 +1,528 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Chapter One - April 23rd 2025 Event - Find Your Perfect Match</title>
+    <meta name="description" content="Chapter One - Curated by humans, matched by design. Join our exclusive matchmaking events in London.">
+    <meta property="og:title" content="Chapter One - London Dating Events">
+    <meta property="og:description" content="Find your handpicked connection at our exclusive events. Powered by relationship science.">
+    <meta property="og:url" content="https://chapteronldn.events">
+    <meta property="og:type" content="website">
+    <link rel="canonical" href="https://chapteronldn.events">
+    <link rel="stylesheet" href="styles.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=DM+Serif+Display&family=Poppins:wght@300;400;500;600;700&family=Space+Mono:wght@400;700&family=Playfair+Display:wght@400;500;600;700&family=Inter:wght@300;400;500;600&display=swap" rel="stylesheet">
+    <script src="https://unpkg.com/gsap@3.12.2/dist/gsap.min.js"></script>
+    <script src="https://unpkg.com/gsap@3.12.2/dist/ScrollTrigger.min.js"></script>
+    <style>
+        :root {
+            /* Primary Colors - Luxury Theme */
+            --primary-background: #0D0A06;
+            --secondary-surface: #1A110D;
+            --accent-surface: #271C14;
+            
+            /* Typography Colors */
+            --main-heading: #CEA335;
+            --body-text: #E6D9C3;
+            --muted-label: #B78E3F;
+            
+            /* Brand Accent Colors */
+            --primary-accent: #CEA335;
+            --secondary-accent: #B78E3F;
+            --success-accent: #95845A;
+            
+            /* UI Details */
+            --glow-effect: 0 0 12px rgba(206, 163, 53, 0.35);
+            --gradient-accent: linear-gradient(135deg, #CEA335 0%, #B78E3F 100%);
+            
+            /* Fonts */
+            --font-heading: 'Playfair Display', 'DM Serif Display', serif;
+            --font-body: 'Inter', 'Poppins', sans-serif;
+        }
+        
+        body {
+            background: linear-gradient(180deg, #0C0805 0%, #1A110D 100%);
+            color: var(--body-text);
+            font-family: var(--font-body);
+        }
+        
+        h1, h2, h3, h4, h5, h6 {
+            color: var(--main-heading);
+            font-family: var(--font-heading);
+            font-weight: 600;
+            letter-spacing: -0.02em;
+        }
+        
+        .hero-subtitle {
+            color: var(--body-text);
+        }
+        
+        .cta-button, .event-button, .join-btn, .subscribe-btn {
+            background: var(--gradient-accent);
+            box-shadow: var(--glow-effect);
+        }
+        
+        .cta-button:hover, .event-button:hover, .join-btn:hover, .subscribe-btn:hover {
+            background: var(--primary-accent);
+            transform: translateY(-2px);
+        }
+        
+        .countdown-box {
+            background-color: rgba(19, 14, 10, 0.8);
+            box-shadow: 0 8px 24px rgba(0, 0, 0, 0.2);
+            border: 1px solid #3B2C1A;
+        }
+        
+        .countdown-headline {
+            color: var(--main-heading);
+        }
+        
+        .countdown-block {
+            background-color: rgba(10, 8, 5, 0.7);
+            border: 1px solid rgba(183, 142, 63, 0.3);
+        }
+        
+        .countdown-number {
+            color: var(--primary-accent);
+        }
+        
+        .countdown-label {
+            color: var(--muted-label);
+        }
+        
+        .event-card {
+            background-color: rgba(19, 14, 10, 0.8);
+            border-radius: 1rem;
+            border: 1px solid #3B2C1A;
+        }
+        
+        .event-title {
+            color: var(--main-heading);
+        }
+        
+        .event-date {
+            color: var(--primary-accent);
+        }
+        
+        .event-time, .event-postal {
+            color: var(--muted-label);
+        }
+        
+        .event-venue {
+            color: var(--body-text);
+        }
+        
+        .footer-container {
+            background-color: rgba(19, 14, 10, 0.8);
+            border: 1px solid #3B2C1A;
+        }
+        
+        .footer-bottom {
+            background-color: var(--primary-background);
+        }
+    </style>
+</head>
+<body>
+    <!-- Animated background container -->
+    <div class="animated-background">
+        <div class="gradient-blob blob-1"></div>
+        <div class="gradient-blob blob-2"></div>
+        <div class="gradient-blob blob-3"></div>
+        <div class="gradient-blob blob-4"></div>
+        <div class="parallax-layer"></div>
+    </div>
+    
+    <div class="noise-overlay"></div>
+    <div class="particles-container" id="particles-js"></div>
+    
+    <header>
+        <div class="logo">Chapter One</div>
+        <nav>
+            <ul>
+                <li><a href="#how-it-works">How It Works</a></li>
+                <li><a href="#why-it-works">Why It Works</a></li>
+                <li><a href="#testimonials">Testimonials</a></li>
+                <li><a href="https://form.typeform.com/to/WNSAU2sD" class="join-btn">Join the Guestlist</a></li>
+            </ul>
+        </nav>
+        <div class="mobile-menu-icon">
+            <i class="fas fa-bars"></i>
+        </div>
+    </header>
+
+    <section class="hero">
+        <div class="video-container">
+            <video autoplay muted playsinline class="hero-video">
+                <source src="Curated Connections.video.mp4" type="video/mp4">
+                Your browser does not support the video tag.
+            </video>
+            <div class="video-overlay"></div>
+        </div>
+        <div class="animated-gradient"></div>
+        <div class="container">
+            <h1 class="typewriter-text">Curated by humans, matched by design</h1>
+            <p id="tagline" class="hidden-text hero-subtitle">Find your handpicked connection at our exclusive events</p>
+            <button class="cta-button ripple-effect" onclick="window.location.href='https://form.typeform.com/to/WNSAU2sD'">Join the Guestlist</button>
+        </div>
+    </section>
+
+    <section id="join" class="signup">
+        <div class="container">
+            <h2 class="upcoming-events-title">Upcoming Events</h2>
+            <div class="decorative-divider"></div>
+            
+            <div class="event-section">
+                <!-- Countdown Timer Box -->
+                <div class="countdown-box">
+                    <h3 class="countdown-headline">Next event starts in:</h3>
+                    <div class="countdown-blocks">
+                        <div class="countdown-block">
+                            <div class="countdown-number" id="days">27</div>
+                            <div class="countdown-label">Days</div>
+                        </div>
+                        <div class="countdown-block">
+                            <div class="countdown-number" id="hours">20</div>
+                            <div class="countdown-label">Hours</div>
+                        </div>
+                        <div class="countdown-block">
+                            <div class="countdown-number" id="minutes">30</div>
+                            <div class="countdown-label">Minutes</div>
+                        </div>
+                        <div class="countdown-block">
+                            <div class="countdown-number" id="seconds">26</div>
+                            <div class="countdown-label">Seconds</div>
+                        </div>
+                    </div>
+                </div>
+                
+                <!-- Event Card -->
+                <div class="event-card">
+                    <div class="event-image">
+                        <img src="images/Core Bar.png" alt="Core Bar London" />
+                    </div>
+                    <div class="event-info">
+                        <h3 class="event-title">Core Bar</h3>
+                        <p class="event-date">Wednesday April 23, 2025</p>
+                        <p class="event-time">7:00 PM — 10:00 PM</p>
+                        <p class="event-venue">Core Bar, 10-15 Queen St, London</p>
+                        <p class="event-postal">EC4N 1TX</p>
+                        <div class="button-container">
+                            <button class="event-button ripple-effect" onclick="window.location.href='https://app.promotix.com/events/details/ChapterOne-tickets?referrer=additional'">Join the Next Event</button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section id="how-it-works" class="steps">
+        <div class="container">
+            <h2>How It Works</h2>
+            
+            <!-- Progress indicator -->
+            <div class="progress-line-container">
+                <div class="progress-line"></div>
+                <div class="progress-marker" data-step="1"></div>
+                <div class="progress-marker" data-step="2"></div>
+                <div class="progress-marker" data-step="3"></div>
+            </div>
+            
+            <div class="steps-container">
+                <!-- Step 1: Take the Questionnaire -->
+                <div class="step how-it-works-step step-one" id="step1">
+                    <div class="step-number">01</div>
+                    <div class="step-content">
+                        <h3>📝 Step 1 – The Questionnaire</h3>
+                        <p class="step-subtitle">3 minutes. Real questions. Real insights.</p>
+                        <p>When you arrive at Chapter One, we guide you through a short but powerful matchmaking questionnaire built by relationship scientists. It only takes 3 minutes — but it shapes the whole night.</p>
+                        <div class="animated-question" id="questionBox">
+                            <!-- Dynamic questions will be inserted here -->
+                        </div>
+                    </div>
+                    <div class="step-image lottie-container" data-animation="questionnaire">
+                        <img src="images/Step 1.png" alt="Step 1: The Questionnaire" class="step-img">
+                    </div>
+                    <!-- Connector -->
+                    <div class="connector">
+                        <div class="connector-line"></div>
+                        <div class="connector-dot dot1"></div>
+                        <div class="connector-dot dot2"></div>
+                        <div class="connector-dot dot3"></div>
+                    </div>
+                </div>
+
+                <!-- Step 2: Algorithm Finds Your Match -->
+                <div class="step how-it-works-step step-two" id="step2">
+                    <div class="step-number">02</div>
+                    <div class="step-content">
+                        <h3>🤖 Step 2 – The Algorithm</h3>
+                        <p class="step-subtitle">Let the Data Do the Work</p>
+                        <p>The algorithm instantly analyzes your responses using Nobel Prize–winning decision theory and over 50 compatibility variables. It identifies your best potential match — quietly working behind the scenes as the evening begins.</p>
+                        <canvas id="connectionCanvas"></canvas>
+                    </div>
+                    <div class="step-image lottie-container" data-animation="algorithm">
+                        <img src="images/Step 2.png" alt="Step 2: The Algorithm" class="step-img">
+                    </div>
+                    <!-- Connector -->
+                    <div class="connector">
+                        <div class="connector-line"></div>
+                        <div class="connector-dot dot1"></div>
+                        <div class="connector-dot dot2"></div>
+                        <div class="connector-dot dot3"></div>
+                    </div>
+                </div>
+
+                <!-- Step 3: Discover Your Match -->
+                <div class="step how-it-works-step step-three" id="step3">
+                    <div class="step-number">03</div>
+                    <div class="step-content">
+                        <h3>🥂 Step 3 – The Reveal</h3>
+                        <p class="step-subtitle">Meet Your Match</p>
+                        <p>After you've mingled and enjoyed the event, we reveal your personalized match — chosen with precision and designed to spark something real.</p>
+                        <div class="match-card" id="matchRevealBox"></div>
+                    </div>
+                    <div class="step-image lottie-container" data-animation="match">
+                        <img src="images/Step 3.png" alt="Step 3: The Reveal" class="step-img">
+                    </div>
+                    <!-- Final glow effect -->
+                    <div class="final-glow"></div>
+                </div>
+            </div>
+            
+            <!-- Floating particles background -->
+            <div class="steps-particles"></div>
+        </div>
+    </section>
+
+    <section id="powered-by" class="powered-by">
+        <div class="container">
+            <div class="powered-by-content">
+                <div class="powered-by-text">
+                    <h2 class="section-title">Powered by Matchbox</h2>
+                    <p class="section-subtext">We proudly use <strong>Matchbox</strong>, the leading relationship science platform built by Stanford researchers. This is the same matchmaking engine featured in top-tier universities and private events worldwide.</p>
+                    <ul class="software-points">
+                        <li>Built by experts in psychology, behavioral science, and AI</li>
+                        <li>Combines 50+ data points to generate high-quality matches</li>
+                        <li>Based on Nobel Prize-winning decision theory</li>
+                        <li>Trusted by over 750,000 users</li>
+                    </ul>
+                    <p class="note">Chapter One is proud to license Matchbox's software — we use matchbox to power your experience.</p>
+                </div>
+                <div class="powered-by-visual">
+                    <div class="visual-card">
+                        <div class="card-content">
+                            <h3>Matchbox Compatibility Engine</h3>
+                            <div class="tagline">Private · Real-Time · Scientifically Validated</div>
+                            <div class="visual-mockup">
+                                <div class="neural-network">
+                                    <div class="node node-1"></div>
+                                    <div class="node node-2"></div>
+                                    <div class="node node-3"></div>
+                                    <div class="node node-4"></div>
+                                    <div class="node node-5"></div>
+                                    <div class="node node-6"></div>
+                                    <div class="connection connection-1"></div>
+                                    <div class="connection connection-2"></div>
+                                    <div class="connection connection-3"></div>
+                                    <div class="connection connection-4"></div>
+                                    <div class="connection connection-5"></div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section id="testimonials" class="testimonials">
+        <div class="container">
+            <h2>Real People. Real Stories.</h2>
+            <div class="decorative-underline"></div>
+            
+            <div class="testimonial-carousel">
+                <div class="testimonial-container">
+                    <div class="testimonial active">
+                        <div class="quote-mark">"</div>
+                        <div class="testimonial-quote">I was skeptical at first, but the algorithm actually matched me with someone I really connected with!</div>
+                        <div class="testimonial-author">
+                            <div class="author-name">Sarah J.</div>
+                            <div class="author-location">New York, NY</div>
+                        </div>
+                    </div>
+                    
+                    <div class="testimonial">
+                        <div class="quote-mark">"</div>
+                        <div class="testimonial-quote">The questions were surprisingly insightful. They really made me think about what I want in a relationship.</div>
+                        <div class="testimonial-author">
+                            <div class="author-name">Alex M.</div>
+                            <div class="author-location">Los Angeles, CA</div>
+                        </div>
+                    </div>
+                    
+                    <div class="testimonial">
+                        <div class="quote-mark">"</div>
+                        <div class="testimonial-quote">The best part was getting to mingle with everyone before matches were revealed. No pressure, just fun!</div>
+                        <div class="testimonial-author">
+                            <div class="author-name">Jordan T.</div>
+                            <div class="author-location">Chicago, IL</div>
+                        </div>
+                    </div>
+                </div>
+                
+                <div class="carousel-controls">
+                    <button class="prev-btn" aria-label="Previous testimonial"><i class="fas fa-chevron-left"></i></button>
+                    <div class="carousel-dots">
+                        <span class="dot active" data-index="0"></span>
+                        <span class="dot" data-index="1"></span>
+                        <span class="dot" data-index="2"></span>
+                    </div>
+                    <button class="next-btn" aria-label="Next testimonial"><i class="fas fa-chevron-right"></i></button>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section id="why-it-works" class="why-it-works">
+        <div class="container">
+            <h2>Why Chapter One Works</h2>
+            <div class="decorative-underline"></div>
+            
+            <div class="cards-container">
+                <div class="card">
+                    <div class="card-icon">
+                        <i class="fas fa-code"></i>
+                    </div>
+                    <h3>Powered by the technology behind the Marriage Pact</h3>
+                    <p>The algorithm uses the same principles that have successfully matched thousands of couples worldwide.</p>
+                </div>
+                <div class="card">
+                    <div class="card-icon">
+                        <i class="fas fa-users"></i>
+                    </div>
+                    <h3>750,000 people matched to date</h3>
+                    <p>Join the growing community of singles who have found meaningful connections through the events.</p>
+                </div>
+                <div class="card">
+                    <div class="card-icon">
+                        <i class="fas fa-heart"></i>
+                    </div>
+                    <h3>Researched questions exclusively for long-term compatibility</h3>
+                    <p>The questionnaire is designed by relationship experts to identify genuine compatibility factors.</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <footer>
+        <div class="container footer-container">
+            <div class="footer-column">
+                <h3>Chapter One</h3>
+                <div class="column-divider"></div>
+                <p class="footer-description">
+                    A unique, sophisticated dating experience powered by relationship science. Join us to discover more meaningful connections.
+                </p>
+                <div class="social-links">
+                    <a href="https://www.instagram.com/chapterone.ldn" aria-label="Instagram"><i class="fab fa-instagram"></i></a>
+                    <a href="https://www.tiktok.com/@chapterone.events" aria-label="TikTok"><i class="fab fa-tiktok"></i></a>
+                </div>
+            </div>
+
+            <div class="footer-column">
+                <h3>Quick Links</h3>
+                <div class="column-divider"></div>
+                <ul class="footer-links">
+                    <li><a href="#how-it-works">How It Works</a></li>
+                    <li><a href="#join">Upcoming Events</a></li>
+                    <li><a href="#why-it-works">Why It Works</a></li>
+                    <li><a href="#testimonials">Testimonials</a></li>
+                    <li><a href="#">Privacy Policy</a></li>
+                    <li><a href="#">Terms of Service</a></li>
+                </ul>
+            </div>
+
+            <div class="footer-column">
+                <h3>Contact Us</h3>
+                <div class="column-divider"></div>
+                <ul class="contact-info">
+                    <li><i class="far fa-envelope"></i> Chapterone.eventsldn@gmail.com</li>
+                    <li><i class="fas fa-map-marker-alt"></i> London, United Kingdom</li>
+                </ul>
+            </div>
+
+            <div class="footer-column">
+                <h3>Get Exclusive Access</h3>
+                <div class="column-divider"></div>
+                <p class="footer-description">Get exclusive access to our next events by joining our guestlist.</p>
+                <button class="event-button ripple-effect" onclick="window.open('https://form.typeform.com/to/WNSAU2sD', '_blank')">Get Exclusive Access</button>
+            </div>
+        </div>
+        <div class="footer-bottom">
+            <p>© 2023 Chapter One. All rights reserved. Powered by <a href="#">Matchbox</a></p>
+        </div>
+    </footer>
+
+    <div class="modal" id="signup-modal">
+        <div class="modal-content">
+            <span class="close-modal">&times;</span>
+            <h2>Join the Guestlist</h2>
+            <form id="modal-form" action="https://form.typeform.com/to/WNSAU2sD" method="get">
+                <div class="form-group">
+                    <input type="email" id="modal-email" placeholder="Your Email" required>
+                    <span class="validation-icon"><i class="fas fa-check"></i></span>
+                </div>
+                <div class="form-group">
+                    <input type="number" id="modal-age" placeholder="Your Age" min="18" max="99" required>
+                    <span class="validation-icon"><i class="fas fa-check"></i></span>
+                </div>
+                <div class="form-group">
+                    <input type="text" id="modal-location" placeholder="Your Location" required>
+                    <span class="validation-icon"><i class="fas fa-check"></i></span>
+                </div>
+                <div class="form-group">
+                    <input type="text" id="modal-instagram" placeholder="Instagram Handle" required>
+                    <span class="validation-icon"><i class="fas fa-check"></i></span>
+                </div>
+                <div class="form-group">
+                    <label class="gender-label">I'm interested in meeting:</label>
+                    <div class="gender-options">
+                        <label class="gender-option">
+                            <input type="checkbox" name="modal-interest" value="men"> Men
+                        </label>
+                        <label class="gender-option">
+                            <input type="checkbox" name="modal-interest" value="women"> Women
+                        </label>
+                        <label class="gender-option">
+                            <input type="checkbox" name="modal-interest" value="nonbinary"> Non-binary
+                        </label>
+                        <label class="gender-option">
+                            <input type="checkbox" name="modal-interest" value="all"> Everyone
+                        </label>
+                    </div>
+                </div>
+                <button type="submit" class="submit-btn ripple-effect">Submit</button>
+            </form>
+        </div>
+    </div>
+
+    <script src="https://unpkg.com/scrollreveal"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/lottie-web/5.12.2/lottie.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/particles.js/2.0.0/particles.min.js"></script>
+    <script src="script.js"></script>
+    <script>
+        document.addEventListener('DOMContentLoaded', function() {
+            const video = document.querySelector('.hero-video');
+            video.addEventListener('play', function() {
+                setTimeout(() => {
+                    video.pause();
+                    video.currentTime = 0; // Reset to start
+                    video.play(); // Restart video
+                }, 6000); // Stop video after 6 seconds
+            });
+        });
+    </script>
+</body>
+</html> 
